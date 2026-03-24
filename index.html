@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алихандын сайты</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .fon {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; 
+        }
+
+        .topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: rgba(35, 192, 106, 0.7); 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box; 
+            z-index: 1000;
+        }
+
+        .fio {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .fio span { 
+            color: rgb(85, 3, 238);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .fio span:hover {
+            color: aqua;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .nav {
+            display: none;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .nav {
+                display: flex;
+            }
+        }
+
+        .nav a {
+            color: rgb(85, 3, 238);
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 1.2rem;
+        }
+
+        .nav a:hover {
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7" alt="Автомобиль" class="fon">
+
+    <header>
+        <div class="topbar">
+            <div class="fio">
+                <img src="картинка.png" alt="Логотип" class="logo">
+                <span>Ахметов Алихан</span>
+            </div>
+            <nav class="nav">
+                <a href="https://youtube.com/playlist?list=PLXnIohISHNIs_DGwltVIutFBbDK4DjvEI">Дарги</a>
+                <a href="ali2.html">Продажа</a>
+                <a href="https://bit.ly/AllEpisodesMashaBear">Компания</a>
+            </nav>
+        </div>
+    </header>
+
+</body>
+</html>
